@@ -26,6 +26,9 @@
     li {
       margin-bottom: 40px;
       text-align: right;
+      @media(max-width: 1500px){
+        margin-bottom: 30px;
+      }
 
       a {
         font-weight: 500;
@@ -40,6 +43,9 @@
         text-decoration: underline;
         text-decoration-color: transparent;
         text-decoration-thickness: .5px;
+        @media(max-width: 1500px){
+          font-size: 22px;
+        }
 
         &:hover {
           text-decoration-color: #fff;

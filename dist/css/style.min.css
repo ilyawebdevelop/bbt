@@ -13828,6 +13828,11 @@ h3,
   text-align: right;
   /* Стили для АКТИВНОГО (подсвеченного) пункта */
 }
+@media (max-width: 1500px) {
+  .side-menu ul li {
+    margin-bottom: 30px;
+  }
+}
 .side-menu ul li a {
   font-weight: 500;
   font-size: 26px;
@@ -13841,6 +13846,11 @@ h3,
   text-decoration: underline;
   text-decoration-color: transparent;
   text-decoration-thickness: 0.5px;
+}
+@media (max-width: 1500px) {
+  .side-menu ul li a {
+    font-size: 22px;
+  }
 }
 .side-menu ul li a:hover {
   text-decoration-color: #fff;
