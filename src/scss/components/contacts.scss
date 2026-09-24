@@ -1,0 +1,46 @@
+.contacts {
+  background: var(--eng-glacierwhite);
+
+  .copyright {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--eng-secondary);
+    width: fit-content;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.contactsSoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    svg {
+      fill: #071A2F;
+    }
+  }
+
+  svg {
+    width: 48px;
+    height: 48px;
+    fill: #65859C;
+  }
+}
+
+.contactsLink {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--eng-secondary);
+}
+
+a.contactsLink {
+  &:hover {
+    color: var(--eng-midnightnavy);
+  }
+}

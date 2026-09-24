@@ -1,0 +1,86 @@
+.side-menu {
+  font-family: var(--second-family);
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    /* Белая линия справа */
+    padding-right: 20px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 1px;
+transition: background-color .2s linear;
+    }
+
+    li {
+      margin-bottom: 40px;
+      text-align: right;
+
+      a {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 138%;
+        letter-spacing: 0.02em;
+        text-align: right;
+        text-decoration-skip-ink: none;
+        color: #fff;
+        text-underline-offset: 3px;
+        transition: text-decoration-color .2s linear, color .2s linear;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: .5px;
+
+        &:hover {
+          text-decoration-color: #fff;
+        }
+      }
+
+      /* Стили для АКТИВНОГО (подсвеченного) пункта */
+      &.active a {
+        color: #ffffff;
+        /* Яркий белый цвет */
+        text-decoration-color: #fff;
+        /* Подчеркивание текста */
+      }
+    }
+  }
+}
+
+.fp-viewing-contacts {
+  .side-menu ul li a {
+    color: var(--eng-secondary);
+
+    &:hover {
+      text-decoration-color: var(--eng-secondary);
+    }
+  }
+
+  .side-menu ul::after {
+    background-color: var(--eng-secondary);
+  }
+
+  .side-menu ul li.active a {
+    text-decoration-color: var(--eng-secondary);
+  }
+
+  .logo-black {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .logo-white {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

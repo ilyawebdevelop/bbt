@@ -1,0 +1,64 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 10px;
+  height: 55px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+
+  &--lg {
+    height: 65px;
+
+    @media(max-width: 991px) {
+      height: 50px;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+}
+
+.main-button {
+  /* ТВОИ ОРИГИНАЛЬНЫЕ СТИЛИ (ФОН СНОВА БУДЕТ ИДЕАЛЬНЫМ) */
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 20px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: var(--second-family);
+  font-size: 56px;
+  line-height: 129%;
+  letter-spacing: 0.02em;
+  color: var(--eng-midnightnavy);
+  min-width: 440px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  span {
+    position: relative;
+    bottom: 8px;
+    z-index: 2;
+    /* Поднимаем текст выше рамки */
+  }
+}

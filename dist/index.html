@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Главная</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header header-main" id="header">
+  <div class="container">
+    <div class="d-flex gap-4 justify-content-between align-items-start">
+      <a href="#" class="headerLogo logo">
+        <img class="logo-white" src="img/admin/logo/logo-white.svg" alt="logo">
+        <img class="logo-black" src="img/admin/logo/logo-black.svg" alt="logo">
+      </a>
+      <!--  меню -->
+<nav class="side-menu">
+  <ul id="menu">
+    <li data-menuanchor="journeys"><a href="#journeys">Journeys</a></li>
+    <li data-menuanchor="about"><a href="#about">About</a></li>
+    <li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
+  </ul>
+</nav>
+    </div>
+  </div>
+
+</header>
+		<main class="main main-page" id="fullpage">
+			<section class="journeys section bg-position-center bg-size-cover bg-repeat-none"
+  style="background-image: url('img/admin/fullpage/image-1.jpg');">
+  <a href="/asd" class="main-button mx-auto">
+    <span>Jouneys</span>
+  </a>
+</section>
+			<section class="about section bg-position-center bg-size-cover bg-repeat-none"
+  style="background-image: url('img/admin/fullpage/image-2.jpg');">
+  <a href="#" class="main-button mx-auto">
+    <span>About</span>
+  </a>
+</section>
+			<section class="contacts section">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center gap-4">
+      <div class="d-flex justify-content-center gap-4">
+        <a class="contactsSoc" href="#" target="_blank" rel="nofollow">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#message"></use>
+          </svg>
+        </a>
+        <a class="contactsSoc" href="#" target="_blank" rel="nofollow">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+          </svg>
+        </a>
+      </div>
+      <a class="contactsLink" href="mailto:contact@baikalbusinesstravel.com">contact@baikalbusinesstravel.com</a>
+      <span class="contactsLink">Russia, Baikal</span>
+    </div>
+
+  </div>
+  <div class="copyright text-center mx-auto"> EST. 2016 </div>
+</section>
+		</main>
+	
+		
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--blue formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>
